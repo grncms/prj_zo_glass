@@ -207,19 +207,19 @@
 					<div class="form-check form-check-inline">
 						<input class="form-check-input" type="radio"
 							name="inlineRadioOptions" id="inlineRadio2" value="여자"> <label
-							class="form-check-label" for="inlineRadio2">여자</label>
+							class="form-check-label" for="inlineRadio2">여자</label></div>
 				</td>
 				<th scope="row">국적</th>
 				<td>
 					<div class="form-check form-check-inline">
 						<input class="form-check-input" type="radio"
 							name="inlineRadioOptions2" id="inlineRadio3" value="내국인" checked>
-						<label class="form-check-label" for="inlineRadio1">내국인</label>
+						<label class="form-check-label" for="inlineRadio3">내국인</label>
 					</div>
 					<div class="form-check form-check-inline">
 						<input class="form-check-input" type="radio"
 							name="inlineRadioOptions2" id="inlineRadio4" value="외국인">
-						<label class="form-check-label" for="inlineRadio2">외국인</label>
+						<label class="form-check-label" for="inlineRadio4">외국인</label></div>
 				</td>
 			</tr>
 			<tr>
@@ -241,36 +241,117 @@
 			<tr>
 				<th scope="row">핸드폰</th>
 				<td><select class="form-select form-select-sm"
-					aria-label="Default select example">
+					aria-label="Default select example" style="width: 80px;">
 						<!-- <option selected>Open this select menu</option> -->
 						<option value="1">KT</option>
 						<option value="2">SKT</option>
 						<option selected value="3">LGU+</option>
-				</select>010-1111-1111</td>
-				<th scope="row">아이디</th>
-				<td>asdfasdf</td>
+				</select>010 - 1111 - 1111</td>
+				<th scope="row">모바일 마케팅<br>수신동의</th>
+				<td>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio"
+							name="inlineRadioOptions3" id="inlineRadio5" value="동의" checked>
+						<label class="form-check-label" for="inlineRadio5">동의</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio"
+							name="inlineRadioOptions3" id="inlineRadio6" value="비동의">
+							<label class="form-check-label" for="inlineRadio6">비동의</label></div>
+				</td>
 			</tr>
 			<tr>
-				<th scope="row">비밀번호</th>
-				<td><div class="row g-3 align-items-center">
-						<div class="col-auto">
-							<input type="password" id="inputPassword6" class="form-control"
-								aria-describedby="passwordHelpInline" value="123123123">
-						</div>
-					</div></td>
-				<th scope="row">비밀번호확인</th>
-				<td><div class="row g-3 align-items-center">
-						<div class="col-auto">
-							<input type="password" id="inputPassword6" class="form-control"
-								aria-describedby="passwordHelpInline" value="123123123">
-						</div>
-					</div></td>
+				<th scope="row">전화번호</th>
+				<td><select class="form-select form-select-sm"
+					aria-label="Default select example" style="width: 80px;">
+						<option selected value="1">02</option>
+						<option value="2">031</option>
+						<option value="3">032</option>
+						<option value="4">055</option>
+				</select>555-2525</td>	
+				<th scope="row">팩스</th>
+				<td><select class="form-select form-select-sm"
+					aria-label="Default select example" style="width: 80px;">
+						<!-- <option selected>Open this select menu</option> -->
+						<option selected value="1">070</option>
+						<option value="2">031</option>
+						<option value="3">032</option>
+						<option value="4">055</option>
+				</select>2525 - 1111</td>					
 			</tr>
 			<tr>
-				<th scope="row">성별</th>
-				<td></td>
-				<th scope="row">국적</th>
-				<td></td>
+				<th scope="row">이메일</th>
+				<td>
+					<div class="input-group mb-3">
+					  <input type="text" class="form-control" value="asdfasdf" aria-label="Recipient's username" aria-describedby="basic-addon2" style="width: 80px;">
+					  <span class="input-group-text" id="basic-addon2">@naver.com</span>
+					
+					<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#emailModal" data-bs-whatever="asdfasdf@naver.com">send</button>
+					<!-- modal -->
+
+						<div class="modal fade" id="emailModal" tabindex="-1"
+							aria-labelledby="#emailModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="emailModalLabel">New
+											message</h5>
+										<button type="button" class="btn-close"
+											data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<form>
+											<div class="mb-3">
+												<label for="recipient-name" class="col-form-label">Recipient:</label>
+												<input type="text" class="form-control" id="recipient-name">
+											</div>
+											<div class="mb-3">
+												<label for="message-text" class="col-form-label">Message:</label>
+												<textarea class="form-control" id="message-text"></textarea>
+											</div>
+										</form>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary"
+											data-bs-dismiss="modal">Cencel</button>
+										<button type="button" class="btn btn-primary">Send
+											message</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</td>
+				<th scope="row">이메일 마케팅<br>수신동의</th>
+				<td>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio"
+							name="inlineRadioOptions4" id="inlineRadio5" value="동의">
+						<label class="form-check-label" for="inlineRadio7">동의</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio"
+							name="inlineRadioOptions4" id="inlineRadio6" value="비동의" checked>
+							<label class="form-check-label" for="inlineRadio6">비동의</label></div>
+				</td>
+			</tr>			
+			<tr>
+				<th scope="row">비밀번호질문</th>
+				<td><select class="form-select form-select-sm"
+					aria-label="Default select example" style="width: 280px;">
+						<!-- <option selected>Open this select menu</option> -->
+						<option value="1">질문을 고르시오</option>
+						<option selected value="2">당신의 고향은?</option>
+						<option value="3">당신이 좋아하는 음식은?</option>
+						<option value="4">당신의 숨겨진 비밀은?</option>
+						<option value="5">당신이 좋아하는 책의 제목은?</option>
+						<option value="6">당신의 좋아하는 영화의 제목은?</option>
+						<option value="7">당신의 좋아하는 노래의 제목은?</option>
+						<option value="8">당신이 좋아하는 과자는?</option>
+						<option value="9">당신이 태어난 곳은?</option>
+				</select></td>					
+				<th scope="row">비밀번호정답</th>
+				<td scope="row">구리시</td>
 			</tr>
 			<tr>
 				<th scope="row">주소</th>
