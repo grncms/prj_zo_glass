@@ -8,6 +8,20 @@
 <!-- Bootstrap CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"	rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
+<style>
+ 	table {
+		width: 100%;
+		border: 1px solid #444444;
+	}
+    
+	th, td {
+		border: 1px solid #444444;
+ 	}
+ 	
+</style>
+
+
+
 <title>memberVIew</title>
 </head>
 
@@ -257,7 +271,7 @@
 		</thead>
 		<tbody>
 			<tr>
-				<th scope="row">핸드폰<img src="./kakao48.png"></th>
+				<th scope="row">핸드폰<img alt="" src="./kakao48.png"></th>
 				<td><select class="form-select form-select-sm"
 					aria-label="Default select example" style="width: 80px;">
 						<!-- <option selected>Open this select menu</option> -->
@@ -355,7 +369,34 @@
 			</tr>
 			<tr>
 				<th>SNS</th>
-				<td colspan="3">💻경력</td>				
+				<td colspan="2">
+					<div class="list-group">
+						<a href="https://www.instagram.com/" class="list-group-item list-group-item-action">
+							<div class="form-check">
+  								<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  								<label class="form-check-label" for="flexCheckChecked"><img alt="" src="./instagram24.png"> Instagram</label>
+							</div>
+						</a>
+						<a href="https://www.facebook.com/" class="list-group-item list-group-item-action list-group-item-primary">
+							<div class="form-check">
+  								<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  								<label class="form-check-label" for="flexCheckChecked"><img alt="" src="./facebook24.png"> Facebook</label>
+							</div>						
+						</a>
+						<a class="list-group-item list-group-item-action list-group-item-info">
+							<div class="form-check">
+  								<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+  								<label class="form-check-label" for="flexCheckChecked"><img alt="" src="./naver242.png"> NaverBlog</label>
+							</div>						
+						</a>
+						<a href="https://www.youtube.com/" class="list-group-item list-group-item-action list-group-item-danger">
+							<div class="form-check">
+  								<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  								<label class="form-check-label" for="flexCheckChecked"><img alt="" src="./youtube24.png"> YouTube</label>
+							</div>						
+						</a>
+					</div>
+				<td class="no-line"></td>				
 			</tr>
 			
 			
@@ -366,129 +407,42 @@
 	</table>
 	<hr>
 
-	<table class="table table-hover table-success">
+	<table class="text-center table table-hover table-success" style="">
 		<thead>
 			<tr>
-				<th colspan="4">💻경력</th>
+				<th class="text-start" colspan="13">💻경력</th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
-				<th scope="row">핸드폰<img src="./kakao48.png"></th>
-				<td><select class="form-select form-select-sm"
-					aria-label="Default select example" style="width: 80px;">
-						<!-- <option selected>Open this select menu</option> -->
-						<option value="1">KT</option>
-						<option value="2">SKT</option>
-						<option selected value="3">LGU+</option>
-				</select>010 - 1111 - 1111</td>
-				<th scope="row">모바일 마케팅<br>수신동의</th>
-				<td>
-					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio"
-							name="inlineRadioOptions3" id="inlineRadio5" value="동의" checked>
-						<label class="form-check-label" for="inlineRadio5">동의</label>
-					</div>
-					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio"
-							name="inlineRadioOptions3" id="inlineRadio6" value="비동의">
-							<label class="form-check-label" for="inlineRadio6">비동의</label></div>
-				</td>
+				<th scope="row">No.</th>
+				<th scope="row" colspan="3">프로젝트명</th>
+				<th scope="row" colspan="3">참여기간</th>
+				<th scope="row" colspan="3">역할</th>
+				<th scope="row" colspan="3">발주사</th>
 			</tr>
 			<tr>
-				<th scope="row">전화번호</th>
-				<td><select class="form-select form-select-sm"
-					aria-label="Default select example" style="width: 80px;">
-						<option selected value="1">02</option>
-						<option value="2">031</option>
-						<option value="3">032</option>
-						<option value="4">055</option>
-				</select>555-2525</td>	
-				<th scope="row">팩스</th>
-				<td><select class="form-select form-select-sm"
-					aria-label="Default select example" style="width: 80px;">
-						<!-- <option selected>Open this select menu</option> -->
-						<option selected value="1">070</option>
-						<option value="2">031</option>
-						<option value="3">032</option>
-						<option value="4">055</option>
-				</select>2525 - 1111</td>					
+				<td scope="row">No.</td>
+				<td scope="row">No.</td>
+				<td scope="row">No.</td>
+				<td scope="row">No.</td>
+				<td scope="row">No.</td>
+				<td scope="row">No.</td>
+				<td scope="row">No.</td>
+				<td scope="row">No.</td>
+				<td scope="row">No.</td>
+				<td scope="row">No.</td>
+				<td scope="row">No.</td>
+				<td scope="row">No.</td>
+				<td scope="row">No.</td>
 			</tr>
 			<tr>
-				<th scope="row">이메일</th>
-				<td>
-					<div class="input-group mb-3">
-					  <input type="text" class="form-control" value="asdfasdf" aria-label="Recipient's username" aria-describedby="basic-addon2" style="width: 80px;">
-					  <span class="input-group-text" id="basic-addon2">@naver.com</span>
-					
-					<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#emailModal" data-bs-whatever="asdfasdf@naver.com">send</button>
-					<!-- modal -->
-
-						<div class="modal fade" id="emailModal" tabindex="-1"
-							aria-labelledby="#emailModalLabel" aria-hidden="true">
-							<div class="modal-dialog">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h5 class="modal-title" id="emailModalLabel">New
-											message</h5>
-										<button type="button" class="btn-close"
-											data-bs-dismiss="modal" aria-label="Close"></button>
-									</div>
-									<div class="modal-body">
-										<form>
-											<div class="mb-3">
-												<label for="recipient-name" class="col-form-label">Recipient:</label>
-												<input type="text" class="form-control" id="recipient-name">
-											</div>
-											<div class="mb-3">
-												<label for="message-text" class="col-form-label">Message:</label>
-												<textarea class="form-control" id="message-text"></textarea>
-											</div>
-										</form>
-									</div>
-									<div class="modal-footer">
-										<button type="button" class="btn btn-secondary"
-											data-bs-dismiss="modal">Cencel</button>
-										<button type="button" class="btn btn-primary">Send
-											message</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</td>
-				<th scope="row">이메일 마케팅<br>수신동의</th>
-				<td>
-					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio"
-							name="inlineRadioOptions4" id="inlineRadio5" value="동의">
-						<label class="form-check-label" for="inlineRadio7">동의</label>
-					</div>
-					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio"
-							name="inlineRadioOptions4" id="inlineRadio6" value="비동의" checked>
-							<label class="form-check-label" for="inlineRadio6">비동의</label></div>
-				</td>
-			</tr>			
-			<tr>
-				<th scope="row">비밀번호질문</th>
-				<td><select class="form-select form-select-sm"
-					aria-label="Default select example" style="width: 280px;">
-						<!-- <option selected>Open this select menu</option> -->
-						<option value="1">질문을 고르시오</option>
-						<option selected value="2">당신의 고향은?</option>
-						<option value="3">당신이 좋아하는 음식은?</option>
-						<option value="4">당신의 숨겨진 비밀은?</option>
-						<option value="5">당신이 좋아하는 책의 제목은?</option>
-						<option value="6">당신의 좋아하는 영화의 제목은?</option>
-						<option value="7">당신의 좋아하는 노래의 제목은?</option>
-						<option value="8">당신이 좋아하는 과자는?</option>
-						<option value="9">당신이 태어난 곳은?</option>
-				</select></td>					
-				<th scope="row">비밀번호정답</th>
-				<td scope="row">구리시</td>
+				<td scope="row">No.</td>
+				<td scope="row" colspan="3">000웹개발</td>
+				<td scope="row" colspan="3">000백엔드개발</td>
+				<td scope="row" colspan="3">000프론트개발</td>
+				<td scope="row" colspan="3"></td>
 			</tr>
-		</tbody>
 	</table>
 	<hr>
 
